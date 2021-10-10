@@ -1,0 +1,247 @@
+/*
+#Estilo-externo{
+    color: rgb(228, 87, 169);
+}
+*/
+
+body{/*Define aquelas configurações para todos os elementos body*/
+    background-color: black;/*cor de fundo*/
+    color: rgb(255, 254, 254);/*cor da letra*/
+    
+    
+    font-family: Arial, Helvetica, sans-serif;/*tipo de fonte*/
+    font-size: 15px;/*tamanho da fonte*/
+    font-weight: 650;/*espessura da fonte*/
+    
+    /*
+    
+    Mesma coisa do que o de cima
+    
+    font: normal 110% Arial, Helvetica, sans-serif; você define tudo
+    
+    */
+
+    line-height: 1.6em; /*espaço entre uma linha e outra*/
+    /*Mesma coisa */
+    margin: 0; /*cria espaço fora da borda*/
+    padding: 0;/*cria espaço dentro da borda*/
+}
+.conteudo{
+    width: 70%; /*define a largura do elemento*/
+    margin: auto;
+}
+
+a{
+    text-decoration: none;/*especifica a decoração adicionada ao texto, quando você define none ele tira a formatação que já vem*/
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: white;
+}
+/*quando tem um link
+a:visited{
+    color: green;
+}
+*/
+
+.ler{
+    background-color: red;
+    padding: 5px;
+    
+}
+
+.clr{
+    clear: both;
+}
+
+.texto-1{
+    background-color: rgb(109, 109, 109);
+    color: white;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px rgb(255, 0, 0) solid;
+    
+    /* 
+    
+    Mesma coisa do que acima:
+    border: 5px red solid;
+    
+    */
+    
+    border-width: 5px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    /*border: 5px red solid;*/
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /*Mesma coisa
+    padding: 20px;
+    */
+
+    margin-top: 20px;
+    margin: 20px 0;
+
+}
+
+.texto-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;/*estilo da fonte*/
+    text-decoration: underline;/*coisas especiais que pode ser adicionado ao texto*/
+    text-transform: uppercase;/*coloca tudo em maiúscula*/
+    letter-spacing: 0em;/*espaço entre as letras*/
+    word-spacing: 5em;/*espaço entre as palavras*/
+}
+
+.texto-2{
+    background-color: rgb(109, 109, 109);
+    color: white;
+    border: 5px dotted red;
+    padding: 20px;
+    margin: 2% 0;
+}
+
+.categorias{
+    border: 1px solid white;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.categorias h2{
+    text-align: center;/*alinhar o texto*/
+    margin: 0;
+}
+
+.categorias ul{
+    font-size: 150%;
+    padding: 0;
+    list-style: square;
+    list-style: none;/*limpar todas as formatção das bolinhas*/
+    padding-left: 45px;
+
+}
+
+.categorias li{
+    padding-bottom: 5px;
+    border-bottom: dotted 1px white;
+    list-style-image: url("../Imagem/kisspng-check-mark-computer-icons-clip-art-green-check-mark-2-icon-5ab1d1bfebf0f5.0376901715216030079664\ \(1\).png");/*substituir as bolinhas por imagem*/
+}
+
+.perguntas{
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.perguntas .formulario{
+    padding-bottom: 0px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.perguntas label{
+    display: block;/*coloca os elementos em bloc, ou seja, um em cada linha*/
+}
+
+.perguntas input[type="text"], .perguntas textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.perguntas button{
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    height: 185px;
+    border: 1px solid white;
+    box-sizing: border-box;/*redimenciona a altura, largura e espasssamento*/
+    padding: 10px;
+}
+
+#bloco-principal{
+    float:left;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#dentro-bloco{
+    float: right;/*posiona na direita*/
+    width: 40%;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    margin: auto;
+    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid white;
+    position: relative;
+    background-image: url('../Imagem/Fundo.jpg');
+    background-position: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p-box h1{
+    /* vai lá para cima se não cocar relative*/
+    position: absolute;
+    color: black;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    color: black;
+    right: 150px;
+    
+}
+
+.fix-me{
+    position: fixed;
+    top: 50%;
+    
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+.criadores li:first-child{
+    background: red;
+}
+
+.criadores li:last-child{
+    background: blue;
+}
+
+.criadores li:nth-child(3){
+    background: yellow;
+}
+
+.criadores li:nth-child(even){
+    background: grey;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<head>
+		<!--título -->
+		<title>HTLML Cheat Sheet</title>
+	</head>
+	<body>
+		<a href="Blog.html" target="Blog.html">Ir para blog</a>
+
+		<!--Cabeçalho -->
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+
+		<!--Parágrafo(sem margem) -->
+		<p>
+			Era uma <em>vez</em> uma <strong>historia</strong>
+		</p>
+			<!-- href(insirir link)   target="_black"(abrir em outra aba)-->
+		<p>
+			Mas <a href="https://www.google.com.br/" target="_blank">parece</a> que tem outra histria
+		</p>
+		
+		<!--lista-->
+		<ul>
+			<li>Lista item 1</li>
+			<li>Lista item 2</li>
+		</ul>
+
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+		</ol>
+
+		<!-- Tabela -->
+		<table>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Idade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lucas Henrique Lopes</td>
+					<td>Lucas20586@gmail.com</td>
+					<td>13 anos</td>
+				</tr>
+				<tr>
+					<td>Marcos Tulio</td>
+					<td>marcostlc7@gmail.com</td>
+					<td>10 anos</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- Formulário -->
+		<!-- Formulário -->
+        <form action="Blog.html" method="POST">  <!-- Declara que vai ser um formulário / action diz o que fazer quando for clicado o enviar / method = POST anexa dados do formulário no corpo da solicitação HTTP (os dados não são mostrados na URL)-->
+            
+            <div> <!-- indica a seção-->
+                <label>Primeiro Nome</label> <!-- indica o título da pergunda-->
+                <input type="text" name="Primeiro Nome"> <!-- indica que vai receber alguma coisa / o type será qual foma de recebimento, type="text" o usuario pode digitar/ name é só um nome para modividar aquele item(não aparece para o usuário)-->
+            </div>
+            
+             <br>
+
+            <div>
+                <label>Último Nome</label>
+                <input type="text" name="Último Nome" placeholder="Coloque seu primeiro Nome"> <!-- placeholder escreve uma coisa na caixa e quando o usuario começa a escrever ela some-->
+            </div>
+
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type="email" name="Email" placeholder="Coloque seu segundo Nome"> <!-- type="email" só aceita se tiver um formado de endereço de email-->
+            </div>
+
+            <br>
+
+            <div>
+                <!-- Área de texto -->
+                <label>Mensagem</label>
+                <textarea name="Mensagem"></textarea> <!-- Cria uma caixa que o usuario pode alterar o tamanho-->
+            </div>
+
+            <br>
+
+            <div>
+                <!-- caixa de seleção -->
+                <label>Gênero</label>
+                <select> <!-- Cria caixa de seleções-->
+                    <option name="Gênero">Masculino</option> <!-- São as opções que o usuario tem-->
+                    <option name="Gênero">Feminino</option>
+                    <option name="Gênero">Outro</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <!---Idade-->
+                <label>Idade</label>
+                <!-- valor já inserido -->
+                <input type="number" name="Idade" value="15"> <!-- type="number" Indica que vai ser um número / value já vem com um determinado valor definido-->
+            </div>
+
+            <br>
+
+            <div>
+                <!-- data -->
+                <label>Data de Aniversário</label>
+                <input type="date" name="Aniversário"> <!-- type="date" indica que o input é uma data e coloca um calendário-->
+            </div>
+
+            <br>
+
+            <!-- Próxima página -->
+            <input type="submit" name="Mudar de página" value="Próxima Página"> <!-- type="submit" diz que o usuario clicou em enviar, logo ele irá fazer o comando descrito lá em cima-->
+
+        </form>
+
+		<br>
+		
+		<!--Botão -->
+		
+		<button>Click me</button>
+
+		<br><hr>
+
+		<!--Imagem-->
+		<a href="Imagem/1.jpg" target="Imagem/1.jpg">
+			<img src="Imagem/1.jpg" alt="Tenha um bom dia" width="200">
+		</a>
+
+		<hr>
+		<!-- Cotações-->
+		<blockquote cite="http://www.cienciamao.usp.br/tudo/exibir.php?midia=ebr&cod=_1"> <!-- Já traz uma formatação / cite="" faz uma referencia artistica-->
+			Todos nós temos uma casa, um endereço, e dizemos aos nossos amigos: eu moro no bairro tal, na cidade tal. Normalmente as pessoas tem um carinho especial pela cidade onde nasceu ou pelo bairro que passou uma parte de sua vida. Mas será que moramos apenas em um bairro, numa cidade? Será que nossa visão de espaço não está muito reduzida?
+		</blockquote>
+		
+		<!-- sublinha e quando o mouse fica parado em cima da palavra ele mostra uma mensagem-->
+		<p>O que é <abbr title="Word Wide Web">WWW</abbr>?</p>
+
+		<p><cite title="Leitor">Você</cite> sabia disso ?</p>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/b_u7zeg2LAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+		<!--Isso adicioana uma vídeo-->
+		
+		<hr>
+
+		<a href="https://www.instagram.com/lucas_henrique_lopes_costa_/?hl=pt-br" target="_blank">Meu Instagram</a><!--Abre o instagem em outra aba-->
+		
+		<div style="margin-top:500px"></div>
+
+		<footer>
+			<p style="text-align: center">Lucas Promer &trade;| 2020</p>
+		</footer>
+
+	</body>
+
+<html>

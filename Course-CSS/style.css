@@ -1,0 +1,99 @@
+/*Fundo*/
+body{
+    background-color: #ffffff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+/*textos*/
+.conteudo{
+    /*Preencher tudo*/
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+/*Título*/
+#titulo-principal{
+    background-color: rgb(255, 255, 255);
+    color: black
+}
+/*Índice*/
+#navegador{
+    background-color: black;
+    color: white;
+}
+/*Lista*/
+#navegador ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navegador li{
+    /*Coloca tudo na mesma linha*/
+    display: inline;
+}
+
+/*Conteudo da lista*/
+#navegador a{
+    /*Tira a formatação padão*/
+    text-decoration: none;
+    color: white;
+    padding-right: 17%;
+    font-size: 18px;
+}
+/*Imagem do título*/
+#titulo-conteudo{
+    background-image: url(Imagem/Fundo.jpg);
+    background-attachment: fixed;
+    height: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+/*Texto do Título*/
+#titulo-conteudo h1{
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font: bold;
+    line-height: 1.6em;
+    padding-top: inherit;
+}
+/*Primeiro Texto*/
+#principal{
+    float:left;
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+}
+/*Segundo Texto*/
+.segundo{
+    float: right;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 35px;
+    box-sizing: border-box;
+}
+
+/*Copyright*/
+.rodape{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100%;
+}
+/*Adabador*/
+@media(max-width:600px){
+    #principal{
+        width: 100%;
+        float: none;
+    }
+    .segundo{
+        width: 100%;
+        float: none;
+    }
+}
+

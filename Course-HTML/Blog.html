@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Blog</title>
+	<!-- Referencia para pesquisa do google-->
+	<meta name="Descrição" content="Esse é meu Primeiro Site">
+	<meta name="keywords" content="Primeiro, HTML, Lucas Henrique Lopes Costa">
+	<!-- Estilo dos BLocos-->
+	<style type="text/css">
+		#main-header{
+			text-align: center;
+			background-color: rgb(5, 5, 5);
+			color: white;
+			padding: 10px;
+		}
+
+		#main-footer{
+			text-align: center;
+			font-size: 18px;
+		}
+
+		#main-post{
+			padding: 20px
+		}
+	</style>
+</head>
+<body>
+
+	<header id="main-header"> <!-- representa um grupo de suporte introdutório ou navegacional. -->
+		<h1>Meu  Wedsite</h1>
+	</header>
+	<a href="index.html">Voltar para página ínicial</a>
+	<hr>
+	<section id="main-post"> <!--representa uma seção genérica contida em um documento HTML, geralmente com um título, quando não existir um elemento semântico mais específico para representá-lo.-->
+		<article class="post"> <!---É mais comumente usado para conter informações que podem ser distribuídas independentemente-->
+			<h3>Primeiro Post</h3>
+			<small>Postado por Lucas no dia 29</small> <!---Define o texto menor(é geralmente usado para indicar de onde vem o texto)-->
+			<p>Todos nós temos uma casa, um endereço, e dizemos aos nossos amigos: eu moro no bairro tal, na cidade tal. Normalmente as pessoas tem um carinho especial pela cidade onde nasceu ou pelo bairro que passou uma parte de sua vida. Mas será que moramos apenas em um bairro, numa cidade? Será que nossa visão de espaço não está muito reduzida?</p><a href="Post1.html">Leia mais</a>
+		</article>
+		<hr>
+		<article>
+			<h3>Segundo Texto</h3>
+			<small>Postado po Marcos no dia 30</small>
+			<p>Todos nós temos uma casa, um endereço, e dizemos aos nossos amigos: eu moro no bairro tal, na cidade tal. Normalmente as pessoas tem um carinho especial pela cidade onde nasceu ou pelo bairro que passou uma parte de sua vida. Mas será que moramos apenas em um bairro, numa cidade? Será que nossa visão de espaço não está muito reduzida?</p><a href="Post2.html">Leia mais</a>
+		</article>
+	</section>
+
+	<aside id="main-category"> <!--define algum conteúdo a parte do conteúdo em que é colocado.-->
+		<h3>Categorias</h3>
+		<nav> <!---define um conjunto de links de navegação.-->
+			<ul>
+				<li><a href="#">Historia 1</a></li>
+				<li><a href="#">Historia 2</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<footer id="main-footer"> <!---define um rodapé para um documento ou seção.-->
+		<p>COPYRIGHT &copy; 2020, Meu Site</p>
+	</footer>
+
+</body>
+</html>
